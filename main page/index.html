@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentorow</title>
+    <link rel="icon" href="image/favicon.png">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <section id="Home">
+        <nav>
+        <img src="image/l.png" alt="logo">
+            <div class="navigation">
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#Features">Features</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <br>
+        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="first">
+                    <img src="image/main.jpg">
+                </div>
+                <div class="second">
+                    <div class="avatar-box">
+                        <div onclick="selectUserType('admin')" class="avatar">
+                            <img src="image/admin.png" alt="Admin">
+                        </div>
+                        <div onclick="selectUserType('student')" class="avatar">
+                            <img src="image/student.png" alt="Student">
+                        </div>
+                    </div>
+                    <div class="message" id="userMessage"></div>
+                        <form id="loginForm" method="post">
+                            <input type="text" id="username" name="username" placeholder="User ID" required>
+                            <input type="password" id="password" name="password" placeholder="Password" required>
+                            <input type="submit" value="Login">
+                        </form><br>
+                        <hr><br>
+                        <a href="password.html">forgot password?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id = "Features">
+        <h1>Awesome Features</h1><br>
+        <p>Programs designed to meet industry demands and equip you with the right skills</p><br>
+        <div class="container">
+            <div class="row">
+                <div class="box1">
+                    <i class="fa fa-graduation-cap"></i>
+                    <h3>100% Placement</h3>
+                    <p>Our mission is to provide 100% placements to studentsthose who enrol for our specialised courses.</p>
+                </div>
+                <div class="box2">
+                    <i class="fa fa-certificate"></i>
+                    <h3>Certification worth</h3>
+                    <p>Expert-Curated Curriculam that prepares ypu for the job market.</p>
+                </div>
+                <div class="box3">
+                    <i class="material-icons">devices</i>
+                    <h3>Live classes</h3>
+                    <p>Interactive real time sessions with expert mentors.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="slider">
+            <h1>Imbibe The Future With Our Experts</h1>
+            <div class="slide-track">
+                <div class="slide">
+                    <img src="image/frontpage/amazon.png" height="100" width="250">
+                </div>
+                <div class="slide">
+                    <img src="image/frontpage/Deloitte.png" height="100" width="250">
+                </div>
+                <div class="slide">
+                    <img src="image/frontpage/Google.png" height="100" width="250">
+                </div>
+                <div class="slide">
+                    <img src="image/frontpage/ibm.png" height="100" width="250">
+                </div>
+                <div class="slide">
+                    <img src="image/frontpage/ibs.webp" height="100" width="380">
+                </div>
+                <div class="slide">
+                    <img src="image/frontpage/infosys.png" height="100" width="250">
+                </div>
+                <div class="slide">
+                    <img src="image/frontpage/lanware.webp" height="100" width="250">
+                </div>
+                <div class="slide">
+                    <img src="image/frontpage/tcs.png" height="100" width="250">
+                </div>
+                <div class="slide">
+                    <img src="image/frontpage/wipro.png" height="100" width="150">
+                </div>
+                <div class="slide">
+                    <img src="image/frontpage/vaisesika.png" height="100" width="250">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <br>
+
+    <div class="container1 ">
+        <div class="row">
+            <div class="col1">
+                <img src="image/l.png">
+                <h2>Contact Us</h2>
+                <p>Learn from Experts. Grab Your Career...<br>Get your questions answered about learning <br>call: +91 9012345678</p>
+            </div>
+            <div class="col"></div><div class="col"></div>
+            <div class="col2">
+                <h2>Company</h2>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="privacy.html">Privacy & Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="col3">
+                <h2>Help</h2>
+                <ul>
+                    <li><a href="site.html">Site Map</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="footer">  
+        <p>© Mentorow Technologies 2024 | Developed by Python August Batch</p>
+    </div>
+
+  <script src="index.js"></script>
+
+</body>
+</html>
